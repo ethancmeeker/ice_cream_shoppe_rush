@@ -4,7 +4,7 @@ This is a game coded in python using the arcade library. It's an ice cream cone 
 
 A big part of games is using logic to tell if you can do something (a lot of booleans mainly). This project, I wanted to test my use of logic and managing it well enough to make a functioning game. I also wanted to work on my front end abilities by making everything look really nice. Each of the sprites/background where created by me and I think they turned out great. The design is cute and appeals to the eye with fun looking sprites and bright colors.
 
-[Software Demo Video](https://share.descript.com/view/FbC9pMOV2MJ)
+[Software Demo Video](https://share.descript.com/view/MIqT0gXXFEw)
 
 # Development Environment
 
