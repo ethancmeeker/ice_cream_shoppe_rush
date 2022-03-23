@@ -16,15 +16,15 @@ topping_locations = []
 bin_x_locations = [40, 115, 190, 265]
 bin_y_locations = [210, 135, 60]
 topping_x_locations = [560, 490, 420]
-customers = [assets.diva, assets.e, assets.candy, assets.chester, assets.todd, assets.boban, assets.rocco,
+customers = [assets.diva, assets.e, assets.candy, assets.chester, assets.todd, assets.boban, assets.smashing, assets.rocco, 
              assets.scribble, assets.ic_man, assets.bearington, assets.cow, assets.karen, assets.sneke,
-             assets.mars, assets.tera]
-positive_customers = [assets.diva_pos, assets.e_pos, assets.candy_pos, assets.chester_pos, assets.todd_pos, assets.boban_pos, 
+             assets.mars, assets.tera, assets.strongberry, assets.heather, assets.coda, assets.harvest, assets.milly]
+positive_customers = [assets.diva_pos, assets.e_pos, assets.candy_pos, assets.chester_pos, assets.todd_pos, assets.boban_pos, assets.smashing_pos,
                       assets.rocco_pos, assets.scribble_pos, assets.ic_man_pos, assets.bearington_pos, assets.cow_pos, assets.karen_pos,
-                      assets.sneke_pos, assets.mars_pos, assets.tera_pos]
-negative_customers = [assets.diva_neg, assets.e_neg, assets.candy_neg, assets.chester_neg, assets.todd_neg, assets.boban_neg, 
+                      assets.sneke_pos, assets.mars_pos, assets.tera_pos, assets.strongberry_pos, assets.heather_pos, assets.coda_pos, assets.harvest_pos, assets.milly_pos]
+negative_customers = [assets.diva_neg, assets.e_neg, assets.candy_neg, assets.chester_neg, assets.todd_neg, assets.boban_neg, assets.smashing_neg,
                       assets.rocco_neg, assets.scribble_neg, assets.ic_man_neg, assets.bearington_neg, assets.cow_neg, assets.karen_neg,
-                      assets.sneke_neg, assets.mars_neg, assets.tera_neg]
+                      assets.sneke_neg, assets.mars_neg, assets.tera_neg, assets.strongberry_neg, assets.heather_neg, assets.coda_neg, assets.harvest_neg, assets.milly_neg]
 flavors = [assets.bacon_ic, assets.berry_ic, assets.chocolate_ic, assets.strawberry_ic, assets.vanilla_ic, assets.mint_ic,
            assets.pb_ic, assets.pistachio_ic, assets.rocky_road_ic, assets.licorice_ic, assets.c_and_c_ic, assets.bubblegum_ic]
 bins = [assets.bacon_bin, assets.berry_bin, assets.chocolate_bin, assets.strawberry_bin, assets.vanilla_bin, assets.mint_bin,
@@ -323,7 +323,7 @@ class Ice_Cream_Game(arcade.Window):
 
             if self.in_store == False: # Checks if a customer is in the shoppe or not
 
-                self.customer_choice = random.randint(0, 14)
+                self.customer_choice = random.randint(0, 19)
                 scoop1 = random.randint(0, 11)
                 scoop2 = random.randint(0, 11)
                 scoop3 = random.randint(0, 11)
