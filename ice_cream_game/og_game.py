@@ -323,7 +323,7 @@ class Ice_Cream_Game(arcade.Window):
 
             if self.in_store == False: # Checks if a customer is in the shoppe or not
 
-                self.customer_choice = random.randint(0, 19)
+                self.customer_choice = random.randint(0, 20)
                 scoop1 = random.randint(0, 11)
                 scoop2 = random.randint(0, 11)
                 scoop3 = random.randint(0, 11)
