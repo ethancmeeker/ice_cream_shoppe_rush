@@ -25,14 +25,14 @@ positive_customers = [assets.diva_pos, assets.e_pos, assets.candy_pos, assets.ch
 negative_customers = [assets.diva_neg, assets.e_neg, assets.candy_neg, assets.chester_neg, assets.todd_neg, assets.boban_neg, assets.smashing_neg,
                       assets.rocco_neg, assets.scribble_neg, assets.ic_man_neg, assets.bearington_neg, assets.cow_neg, assets.karen_neg,
                       assets.sneke_neg, assets.mars_neg, assets.tera_neg, assets.strongberry_neg, assets.heather_neg, assets.coda_neg, assets.harvest_neg, assets.milly_neg]
-flavors = [assets.bacon_ic, assets.berry_ic, assets.chocolate_ic, assets.strawberry_ic, assets.vanilla_ic, assets.mint_ic, assets.cake_ic,
+flavors = [assets.peppermint_ic, assets.berry_ic, assets.chocolate_ic, assets.strawberry_ic, assets.vanilla_ic, assets.mint_ic, 
            assets.pb_ic, assets.pistachio_ic, assets.rocky_road_ic, assets.licorice_ic, assets.c_and_c_ic, assets.bubblegum_ic,
-           assets.peppermint_ic, assets.coffee_ic, assets.tootie_ic, assets.candy_ic, assets.peach_ic, assets.lemon_ic, assets.sour_apple_ic,
-           assets.cherry_ic, assets.syrup_ic, assets.cookie_dough_ic, assets.neapolitan_ic]
-bins = [assets.bacon_bin, assets.berry_bin, assets.chocolate_bin, assets.strawberry_bin, assets.vanilla_bin, assets.mint_bin, assets.cake_bin,
+           assets.bacon_ic, assets.coffee_ic, assets.tootie_ic, assets.candy_ic, assets.peach_ic, assets.lemon_ic, assets.sour_apple_ic,
+           assets.cherry_ic, assets.syrup_ic, assets.cookie_dough_ic, assets.neapolitan_ic, assets.cake_ic]
+bins = [assets.peppermint_bin, assets.berry_bin, assets.chocolate_bin, assets.strawberry_bin, assets.vanilla_bin, assets.mint_bin, 
            assets.pb_bin, assets.pistachio_bin, assets.rocky_road_bin, assets.licorice_bin, assets.c_and_c_bin, assets.bubblegum_bin,
-           assets.peppermint_bin, assets.coffee_bin, assets.tootie_bin, assets.candy_bin, assets.peach_bin, assets.lemon_bin, assets.sour_apple_bin,
-           assets.cherry_bin, assets.syrup_bin, assets.cookie_dough_bin, assets.neapolitan_bin]
+           assets.bacon_bin, assets.coffee_bin, assets.tootie_bin, assets.candy_bin, assets.peach_bin, assets.lemon_bin, assets.sour_apple_bin,
+           assets.cherry_bin, assets.syrup_bin, assets.cookie_dough_bin, assets.neapolitan_bin, assets.cake_bin]
 toppings = [assets.chocolate_sprinkles, assets.rainbow_sprinkles, assets.confetti_sprinkles, assets.heart_sprinkles, assets.chocolate_syrup,
             assets.caramel_syrup, assets.strawberry_syrup, assets.raspberry_syrup, assets.nuts, assets.cookie_bits, assets.marshmellows, assets.pbcups,
             assets.banana, assets.coconut, assets.gummy_worms, assets.mochi]
@@ -199,7 +199,7 @@ class Ice_Cream_Game(arcade.Window):
                         self.tip_prob = 3
                         self.main_game_active = True
                         self.satisfied_customer = True
-                        self.music = assets.intense_music
+                        self.music = assets.master_music
                         main_game()
 
                 if SCREEN_WIDTH/2 in range(self.mouse_x - 100, self.mouse_x + 100):
